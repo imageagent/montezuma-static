@@ -2,7 +2,7 @@ doctype html
 html.no-js
   head
     meta(charset='utf-8')
-    title Standard Static Website Template
+    title Montezuma Winery
     meta(name='description' content='Standard template for making a static website. Utilizes Bootstrap, Jekyll and Gulp.')
     meta(name='viewport' content='width=device-width, initial-scale=1')
     // Place favicon.ico and apple-touch-icon.png in the root directory
@@ -11,6 +11,9 @@ html.no-js
     // bower:css
     // endbower
     // endbuild
+
+    // FONT AWESOME
+    link(rel="stylesheet", href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css")
 
     // build:css styles/main.css
     link(rel='stylesheet' href='styles/main.css')
@@ -25,11 +28,16 @@ html.no-js
     |   <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     | <![endif]-->
 
-    include ../includes/header.jade
+    include ../includes/navigation.jade
+    include ../includes/masthead.jade
+    include ../includes/section-home-slider.jade
+    include ../includes/section-home-wines.jade
+    include ../includes/section-home-news.jade
+    include ../includes/martinfamily.jade
+    include ../includes/footerlinks.jade
+    include ../includes/copyright.jade
 
-    block content
-
-    include ../includes/footer.jade
+    //- block content
 
   // Google Analytics: change UA-XXXXX-X to be your site's ID.
   //- script.

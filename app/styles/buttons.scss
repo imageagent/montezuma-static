@@ -1,0 +1,57 @@
+// Buttons
+
+.btn {
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.45);
+  padding: 0.65em 2.15em;
+  transition: all 0.15s ease;
+}
+
+
+// DEFAULT
+.btn-default,
+.btn-default:visited,
+.btn-default:focus {
+  background-color: $brand-brown;
+
+  &:hover,
+  &:active {
+    background-color: darken($brand-brown, 10%);
+  }
+}
+
+a.btn-default {
+  color: #f7f7f7;
+
+  &:hover {
+    color: #f7f7f7;
+  }
+}
+
+// PRIMARY
+.btn-primary,
+.btn-primary:visited,
+.btn-primary:focus {
+  background-color: $brand-wine;
+
+  &:hover,
+  &:active {
+    background-color: darken($brand-wine, 10%);
+  }
+}
+
+a.btn-primary {
+  color: #f7f7f7;
+
+  &:hover {
+    color: #f7f7f7;
+  }
+}
+
+
+// Media Queries
+
+@media only screen and (min-width: 768px) {
+
+}

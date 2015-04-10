@@ -1,0 +1,59 @@
+// Reset
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.25;
+  margin: 0;
+}
+
+p,
+li,
+p.lead {
+  line-height: 1.5;
+}
+
+a,
+a:visited {
+  color: $brand-wine;
+
+  &:hover,
+  &:active {
+    color: darken($brand-wine, 10%);
+  }
+}
+
+
+// General
+
+body {
+  font-family: 'Lora', serif;
+}
+
+
+// Headings
+
+h1,
+h2,
+h3 {
+  font-family:'Sree Krushnadevaraya', serif;
+  margin-top: -0.357em;
+}
+
+h1 { color: $brand-brown; font-size: 3.5em; }
+h2 { color: $brand-wine; font-size: 2.25em; }
+h3 { color: $brand-wine; font-size: 1.875em; }
+
+.section-title {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+
+// Media Queries
+
+@media only screen and (min-width: 768px) {
+
+}
