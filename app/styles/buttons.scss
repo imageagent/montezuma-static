@@ -4,7 +4,6 @@
   border: none;
   border-radius: 2px;
   box-shadow: 0 0 5px rgba(0,0,0,0.45);
-  padding: 0.65em 2.15em;
   transition: all 0.15s ease;
 }
 
@@ -23,6 +22,7 @@
 
 a.btn-default {
   color: #f7f7f7;
+  padding: 0.65em 2.15em;
 
   &:hover {
     color: #f7f7f7;
@@ -34,6 +34,7 @@ a.btn-default {
 .btn-primary:visited,
 .btn-primary:focus {
   background-color: $brand-wine;
+  padding: 0.65em 2.15em;
 
   &:hover,
   &:active {

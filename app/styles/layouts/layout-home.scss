@@ -99,38 +99,3 @@
     }
   }
 }
-
-.post-content {
-  background-color: rgba(255,255,255,0.25);
-  border-radius: 0 0 2px 2px;
-  padding: 1em;
-}
-
-.post-image {
-  img {
-    border-radius: 2px 2px 0 0;
-    max-width: 100%;
-  } 
-}
-
-.post-header h3 {
-  color: #f7f7f7;
-  line-height: 1.15;
-  margin-bottom: 0.5em;
-}
-
-.post-meta {
-  color: darken($brand-blue, 10%);
-  font-size: 0.85em;
-  font-style: italic;
-  margin-bottom: 0.5em;
-}
-
-.excerpt {
-  margin-bottom: 1.5em;
-
-  p {
-    color: $brand-blue;
-    font-size: 0.85em;
-  }
-}
