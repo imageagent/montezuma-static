@@ -1,0 +1,71 @@
+// Awards
+
+.about-awards {
+  background-color: #4c4c4c;
+  padding: 4em 0;
+
+  h2 {
+    color: #9d9d9d;
+    margin-bottom: 1.5em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.award-list li {
+  color: #7d7d7d;
+  font-size: 0.75em;
+  margin: 1em 0;
+  padding-left: 2.35em;
+  position: relative;
+
+  h4 {
+    color: #9d9d9d;
+    font-size: 1em;
+    font-weight: bold;
+  }
+
+  &:before {
+    background-color: #08c;
+    border-radius: 50%;
+    content: "";
+    height: 16px; width: 16px;
+    position: absolute; top: 0.25em; left: 0;
+    z-index: 2;
+  }
+}
+
+.award-list .desc {
+  display: block;
+}
+
+.award-list li.gold,
+.award-list li.double-gold {
+  h4 {
+    color: gold;
+  }
+}
+.award-list li.silver h4 { color: silver; }
+.award-list li.bronze h4 { color: #ac7d5e; }
+
+
+.award-list li.double-gold {
+  &:before {
+    background-color: gold;
+    box-shadow: 0 0 2px rgba(0,0,0,0.45);
+    left: 0.25em;
+  }
+
+  &:after {
+    background-color: gold;
+    border-radius: 50%;
+    content: "";
+    height: 16px; width: 16px;
+    position: absolute; top: 0.25em; left: -0.25em;
+    z-index: 1;
+  }
+}
+
+.award-list li.gold:before { background-color: gold; }
+.award-list li.silver:before { background-color: silver; }
+.award-list li.bronze:before { background-color: #ac7d5e; }

@@ -1,0 +1,89 @@
+.masthead {
+  padding: 5em 0 2em;
+
+  h1 {
+    font-size: 5em;
+    margin-bottom: 0.15em;
+  }
+
+  img {
+    max-width: 95%;
+  }
+}
+
+.masthead-general {
+  background-color: $brand-wine;
+
+  h1,
+  .lead {
+    color: $brand-blue;
+  }
+}
+
+
+// Home
+
+.masthead-home {
+  background: url('../images/header-montezuma.jpg') no-repeat center center;
+  background-size: cover;
+  color: #f7f7f7;
+}
+
+
+// About
+
+.masthead-about {
+  background: url('../images/masthead-about.jpg') no-repeat center center;
+  background-size: cover;
+  color: #f7f7f7;
+
+  h1 {
+    color: $brand-blue;
+    font-size: 6em;
+  }
+
+  .subtitle {
+    font-size: 2em;
+    margin-bottom: 2em;
+  }
+}
+
+// Tasting Room
+
+.masthead-tasting-room {
+  background: url('../images/header-gift-shop.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+// Old Forge
+
+.masthead-montezuma-old-forge {
+  background: url('../images/header-old-forge-white.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+// Contact Us
+
+.masthead-contact-us {
+  background: url('../images/header-old-forge.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+
+// Media Queries
+
+@media only screen and (min-width: 768px) {
+
+  .masthead {
+    padding: 12vw 0 0;
+  }
+
+  .masthead-general {
+    padding-bottom: 6.5vw;
+  }
+
+  .masthead-about {
+    padding-bottom: 8vw;
+  }
+
+}

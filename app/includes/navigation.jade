@@ -6,22 +6,27 @@ nav.navbar.navbar-default.navbar-fixed-top
         span.icon-bar
         span.icon-bar
         span.icon-bar
-      a.navbar-brand(href="#")
-        img(src="images/logo-montezuma-red.svg", alt="Montezuma Winery", height="40px")
+      a.navbar-brand(href="/")
+        img(src="images/logo-montezuma-small.svg", alt="Montezuma Winery", height="35px")
     #navbar.collapse.navbar-collapse
       ul.nav.navbar-nav
         li
-          a(href="#") About Us
+          a(href="/about.html") About Us
         li
-          a(href="#") Our Wines
+          a(href="/our-wines.html") Our Wines
+        li.dropdown
+          a.dropdown-toggle(href="#", data-toggle="dropdown", role="button", aria-expanded="false") Visit Us
+            span.caret
+          ul.dropdown-menu(role="menu")
+            li
+              a(href="/tasting-room.html") Tasting Room
+            li
+              a(href="/events.html") Events
+            li
+              a(href="/contact-us.html") Contact Us
         li
-          a(href="#") Visit Us
+          a(href="/montezuma-old-forge.html") Montezuma Old Forge
         li
-          a(href="#") Montezuma Old Forge
-        li
-          a(href="#") Cranberry Blog
+          a(href="/blog.html") Cranberry Blog
       .navbar-right
         a.btn.btn-primary.navbar-btn(href="#") Online Store
-      //- ul.nav.navbar-nav.navbar-right
-        li
-          a(href="#") Shop

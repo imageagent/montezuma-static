@@ -1,0 +1,19 @@
+.content-general.contact-us-content(style="padding-bottom: 4em;")
+  .container-fluid
+    .row
+      .col-sm-6.col-sm-offset-3
+        form
+          .form-group
+            label(for="inputName") Your name
+            input#inputName.form-control(type="text", placeholder="Enter your name", required)
+          .form-group
+            label(for="inputEmail") Email address
+            input#inputEmail.form-control(type="email", placeholder="Enter email", required)
+          .form-group
+            label(for="inputPhone") Phone number
+            input#inputPhone.form-control(type="phone", placeholder="Enter your phone number")
+          .form-group
+            label(for="inputMessage") Your message
+            textarea#inputMessage.form-control(rows="6", placeholder="Enter your message")
+
+          button.btn.btn-primary.btn-block(type="submit") Submit

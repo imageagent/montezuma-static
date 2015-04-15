@@ -1,227 +1,83 @@
-// Navbar
+// General
 
-.navbar {
-  border: none;
-  margin: 0;
-}
+.section-footer {
+  margin-top: 4em;
 
-.navbar-inverse {
-  background-color: rgba(0,0,0,0.45);
-}
-
-.navbar-default {
-  background-color: rgba(255,255,255,0.85);
-}
-
-
-// Masthead
-
-.masthead {
-  background: url('../images/header-montezuma.jpg') no-repeat center center;
-  background-size: cover;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.5);
-  color: #f7f7f7;
-  padding: 5em 0 2em;
-  position: relative;
-  z-index: 2;
-
-  h1 {
-    margin-bottom: 1em;
-  }
-
-  img {
-    max-width: 95%;
-  }
-}
-
-
-// Home Wines
-
-.home-wines {
-  background: url('../images/green-texture-bg.jpg') no-repeat center center fixed;
-  background-size: cover;
-  padding: 6em 0;
-
-  .section-title {
+  a,
+  a:visited,
+  a:focus {
     color: $brand-blue;
-    margin-bottom: 2em;
+
+    &:hover,
+    &:active {
+      color: darken($brand-blue, 10%);
+    }
   }
 }
 
-.wine-block-image {
-  margin-bottom: 1.5em;
-
-  img {
-    max-width: 100%;
-  }
-}
-
-.wine-block-content {
-  color: $brand-blue;
-
-  h3 {
-    color: #f7f7f7;
-    margin-bottom: 0.5em;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.65);
-  }
-
-  .btn {
-    margin-top: 1em;
-  }
-}
-
-
-// Home Slider
-
-.home-slider {
-  img {
-    width: 100%;
-  }
-}
-
-
-// News & Events
-
-.home-news {
-  background: url('../images/tree-bg.jpg') no-repeat center center fixed;
-  background-size: cover;
-  padding: 3em 0 6em;
+.content-general {
+  padding: 4em 0 0;
 
   h2 {
-    color: $brand-blue;
-    font-size: 3.5em;
-    letter-spacing: -1px;
-    margin-bottom: 1.25em;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.25);
+    margin-bottom: 0.5em;
   }
-}
-
-.post-content {
-  background-color: rgba(255,255,255,0.25);
-  border-radius: 0 0 2px 2px;
-  padding: 1em;
-}
-
-.post-image {
-  img {
-    border-radius: 2px 2px 0 0;
-    max-width: 100%;
-  } 
-}
-
-.post-header h3 {
-  color: #f7f7f7;
-  line-height: 1.15;
-  margin-bottom: 0.5em;
-}
-
-.post-meta {
-  color: darken($brand-blue, 10%);
-  font-size: 0.85em;
-  font-style: italic;
-  margin-bottom: 0.5em;
-}
-
-.excerpt {
-  margin-bottom: 1.5em;
-
-  p {
-    color: $brand-blue;
-    font-size: 0.85em;
-  }
-}
-
-
-// Footer
-
-.martin-family {
-  background-color: #3c3c3c;
-  color: #8c8c8c;
-  font-size: 75%;
-  padding: 3em 0;
-  text-align: center;
 
   h3 {
-    color: #8c8c8c;
-    text-transform: uppercase;
-  }
-
-  a,
-  a:visited {
-    color: #8c8c8c;
-
-    &:hover,
-    &:focus,
-    &:active {
-      color: #8c8c8c;
-    }
+    margin-top: 1em;
+    margin-bottom: 0.5em;
   }
 }
 
-.footer-links {
-  background-color: #4c4c4c;
-  color: #8c8c8c;
-  font-size: 1.75em;
-  padding: 1em 0;
-  text-align: center;
+.banner {
+  background-color: $brand-blue;
+  margin-top: 4em;
+  padding: 2em 0 3em;
 
-  a,
-  a:visited {
-    color: #8c8c8c;
-    margin: 0 0.35em;
-    transition: color 0.25s ease;
-
-    &:hover,
-    &:focus,
-    &:active {
-      color: #d3d3d3;
-    }
+  h2 {
+    margin-bottom: 0.25em;
   }
-}
-
-.copyright {
-  background-color: #3c3c3c;
-  color: #8c8c8c;
-  font-size: 65%;
-  padding: 3em 0;
-  text-align: center;
-
-  a,
-  a:visited {
-    color: #8c8c8c;
-
-    &:hover,
-    &:focus,
-    &:active {
-      color: #8c8c8c;
-    }
+  .btn {
+    margin-top: 0.5em;
   }
 }
 
 
-// Media Queries
+// Images
 
-@media only screen and (min-width: 768px) {
-  // Navbar
-  .navbar-brand {
-    height: auto;
-    margin-right: 2em;
-    padding: 30px 15px;
-  }
-  .navbar-nav {
-    padding: 1.57em 0;
-  }
-  .navbar-right {
-    margin-right: 0;
-  }
-  .navbar-btn {
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-
-  // Masthead
-  .masthead {
-    padding: 12vw 0 8vw;
-  }
-
+img.fluid {
+  max-width: 100%;
 }
+
+.image-with-caption {
+  position: relative;
+
+  img {
+    box-shadow: 0 0 4px rgba(0,0,0,0.5);
+    margin-top: 1.5em;
+    max-width: 100%;
+  }
+
+  .image-caption {
+    color: #f7f7f7;
+    font-size: 80%;
+    font-style: italic;
+    position: absolute; bottom: 0.5em; right: 0.7em;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.8);
+  }
+}
+
+
+
+// Partials
+
+@import 'layouts/layout-navbar';
+@import 'layouts/layout-masthead';
+@import 'layouts/layout-footer';
+
+
+// Page-Specific Styles
+
+@import 'layouts/layout-home';
+@import 'layouts/layout-about';
+@import 'layouts/layout-tasting-room';
+@import 'layouts/layout-montezuma-old-forge';

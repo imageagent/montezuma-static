@@ -1,0 +1,136 @@
+// Slider
+
+.home-slider {
+  img {
+    width: 100%;
+  }
+}
+
+
+// Wines
+
+.home-wines {
+  background: url('../images/green-texture-bg.jpg') no-repeat center center;
+  background-size: cover;
+  padding: 4em 0;
+
+  h2 {
+    color: $brand-blue;
+    font-size: 3.5em;
+    letter-spacing: -1px;
+    margin-bottom: 1.25em;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.25);
+  }
+
+  h2.has-subtitle {
+    margin-bottom: 0.25em;
+  }
+
+  .subtitle {
+    margin-bottom: 3em;
+
+    a,
+    a:visited,
+    a:focus {
+      color: $brand-blue;
+
+      &:hover,
+      &:active {
+        color: darken($brand-blue, 10%);
+      }
+    }
+  }
+}
+
+.wine-block-image {
+  margin-bottom: 1.5em;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.wine-block-content {
+  color: $brand-blue;
+
+  h3 {
+    color: #f7f7f7;
+    margin-bottom: 0.5em;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.65);
+  }
+
+  .btn {
+    margin-top: 1em;
+  }
+}
+
+
+// News & Events
+
+.home-news {
+  background: url('../images/tree-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  padding: 4em 0;
+
+  h2 {
+    color: $brand-blue;
+    font-size: 3.5em;
+    letter-spacing: -1px;
+    margin-bottom: 1.25em;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.25);
+  }
+
+  h2.has-subtitle {
+    margin-bottom: 0.25em;
+  }
+
+  .subtitle {
+    margin-bottom: 3em;
+
+    a,
+    a:visited,
+    a:focus {
+      color: $brand-blue;
+
+      &:hover,
+      &:active {
+        color: darken($brand-blue, 10%);
+      }
+    }
+  }
+}
+
+.post-content {
+  background-color: rgba(255,255,255,0.25);
+  border-radius: 0 0 2px 2px;
+  padding: 1em;
+}
+
+.post-image {
+  img {
+    border-radius: 2px 2px 0 0;
+    max-width: 100%;
+  } 
+}
+
+.post-header h3 {
+  color: #f7f7f7;
+  line-height: 1.15;
+  margin-bottom: 0.5em;
+}
+
+.post-meta {
+  color: darken($brand-blue, 10%);
+  font-size: 0.85em;
+  font-style: italic;
+  margin-bottom: 0.5em;
+}
+
+.excerpt {
+  margin-bottom: 1.5em;
+
+  p {
+    color: $brand-blue;
+    font-size: 0.85em;
+  }
+}

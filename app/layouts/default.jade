@@ -29,15 +29,12 @@ html.no-js
     | <![endif]-->
 
     include ../includes/navigation.jade
-    include ../includes/masthead.jade
-    include ../includes/section-home-slider.jade
-    include ../includes/section-home-wines.jade
-    include ../includes/section-home-news.jade
+    block content
     include ../includes/martinfamily.jade
     include ../includes/footerlinks.jade
     include ../includes/copyright.jade
+    
 
-    //- block content
 
   // Google Analytics: change UA-XXXXX-X to be your site's ID.
   //- script.
